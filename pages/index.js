@@ -74,15 +74,7 @@ export default function HomePage() {
       getBalance(account[0]);
     }
   };
-  //const increaseBalance = async () => {
-    //alert(account)
-    //if (atm) {
-      //let tx = await atm.increaseBalance(100,{ gasLimit: 3e7 });
-     // await tx.wait();
-     // getBalance(account[0]);
-    //}
-  //};
-
+ 
   const deductbalance = async () => {
     if (atm) {
       let tx = await atm.deductbalance(250,{ gasLimit: 3e7 });
@@ -90,10 +82,6 @@ export default function HomePage() {
       getBalance(account[0]);
     }
   };
-  // const changeaccount = async () => {
-  //   handleAccount([prompt("Enter wallet address")])
-  //   getBalance(account[0]);
-  // }
 
   const initUser = () => {
     // Check if user has Metamask
@@ -122,20 +110,20 @@ export default function HomePage() {
         <p style={{ fontWeight: "bold" }}>Your Current Balance is: {balance}</p>
         <button
           onClick={deposit}
-          style={{ backgroundColor: "green", color: "white" }}
+          style={{ backgroundColor: "lightgreen", color: "white" }}
         >
           Deposit 300 ETH
         </button>
         <button
           onClick={withdraw}
-          style={{ backgroundColor: "red", color: "white" }}
+          style={{ backgroundColor: "maroon", color: "white" }}
         >
           Withdraw 18 ETH
         </button>
       
         <button
           onClick={deductbalance}
-          style={{ backgroundColor: "orange", color: "white" }}
+          style={{ backgroundColor: "pink", color: "white" }}
         >
           Deduct Balance by 250 ETH
 
@@ -150,12 +138,12 @@ export default function HomePage() {
 
   return (
     <main className="container">
-    <header><h1 style={{ backgroundColor: 'black', color: 'white' }}> --- Welcome to the Metacrafters Crypto ATM! ---</h1></header>
+    <header><h1 style={{ backgroundColor: 'grey', color: 'white' }}> Welcome to the Metacrafters Crypto ATM </h1></header>
     {initUser()}
     <style jsx>{`
       .container {
         text-align: center;
-        background-color: lightblue;
+        background-color: brown;
       }
     `}
     </style>
