@@ -1,4 +1,4 @@
-# ETH-AVAX-PROOF-Intermediate-EVM-Course-2
+# SMART CONTRACT MANAGEMENT MODULE 2 ETH+AVAX INTERMEDIATE COURSE --2
 # React Crypto ATM
 
 This is a simple React component for a Crypto ATM application. It allows users to connect their MetaMask wallet, view their account balance, deposit and withdraw ETH, check the owner's name and a simple calculator with limited operations.
@@ -48,12 +48,8 @@ Typically at http://localhost:3000/
 
 `error InsufficientBalance(uint256 balance, uint256 withdrawAmount)`: A custom error that is used when a withdrawal amount exceeds the contract balance.
 
-`checkbalance()`: To check the balance of the user.
-
 `getbalancefromwalletaddress(address walletAddress)`: It will check the balance of another account with the given wallet address. Anyone will be abale to check the balance of any account with the wallet address.
 
-`increaseBalance() :`This function allows the owner to increase the balance of the contract by a specified amount.
-
-`decreaseBalance(): `This function allows the owner to decrease the balance of the contract by a specified amount, as long as it does not result in a negative balance.
+`deductBalance(): `This function allows the owner to deduct the balance of the contract by a specified amount, as long as it does not result in a negative balance.
 
  
